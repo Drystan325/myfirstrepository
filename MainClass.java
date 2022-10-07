@@ -32,7 +32,7 @@ public class MainClass {
             
         }
         System.out.println("************************");
-        System.out.println("This is you list");
+        System.out.println("This is your list");
         System.out.println("-------------------------");
         System.out.println(a);
         System.out.println("-------------------------");
