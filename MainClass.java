@@ -6,6 +6,7 @@ public class MainClass {
 
     public static void main(String args[]) {
         var a = new ArrayList<String>();
+        
         int i = 0;
 
         Scanner s = new Scanner(System.in);
@@ -19,12 +20,16 @@ public class MainClass {
                 System.out.println("************************");
                 System.out.println("Name Something: ");
                 String name = s.nextLine();
+                var b = new ArrayList<String>();
                 System.out.println("Define That Name: ");
                 String value = s.nextLine();
                 System.out.println("************************");
 
-                var details = (name+":"+value);
-                a.add(details);
+                
+                a.add(name);
+                b.add(value);
+                String c = b.toString();
+                a.add(c);
 
             } catch (Exception e) {
                 System.out.println("Something went Wrong");
@@ -32,7 +37,7 @@ public class MainClass {
             
         }
         System.out.println("************************");
-        System.out.println("This is your list");
+        System.out.println("This is your list. With your name, and your value []");
         System.out.println("-------------------------");
         System.out.println(a);
         System.out.println("-------------------------");
